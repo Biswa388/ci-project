@@ -20,6 +20,8 @@
         <finalName>webapp</finalName>
 
         <plugins>
+
+            <!-- Updated Java compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -29,6 +31,14 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <!-- FIX FOR YOUR ERROR — modern WAR plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+            </plugin>
+
         </plugins>
     </build>
 
