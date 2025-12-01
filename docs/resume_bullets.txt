@@ -1,0 +1,5 @@
+- Implemented CI pipeline using Jenkins Freestyle jobs to automate builds and artifact management.
+- Integrated GitHub repository into Jenkins for continuous integration triggers.
+- Automated Maven build process (clean, package) producing deployable WAR artifacts.
+- Created deployment script to copy WAR to Apache Tomcat and configured Jenkins 'Deploy to Container' as an option.
+- Wrote documentation and created diagrams for stakeholders and interview discussions.

@@ -1,0 +1,21 @@
+<project>
+  <actions/>
+  <description>Freestyle job: Build Java webapp with Maven</description>
+  <scm class="hudson.plugins.git.GitSCM">
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/<your-username>/devops_project_complete.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+  </scm>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>clean package</targets>
+    </hudson.tasks.Maven>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>target/*.war</artifacts>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
+</project>

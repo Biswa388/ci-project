@@ -1,0 +1,1 @@
+CI pipeline example: Java Maven webapp built by Jenkins Freestyle job, with optional Tomcat deployment.
