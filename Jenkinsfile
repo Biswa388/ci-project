@@ -5,7 +5,7 @@ pipeline {
 
         stage('Code') {
             steps {
-                git ''
+                git 'https://github.com/Biswa388/ci-project.git'
             }
         }
 
